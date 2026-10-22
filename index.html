@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New England Traveler | Emmy Award-Winning Travel Series on NESN</title>
+<meta name="description" content="New England Traveler is a 7-time Emmy Award-winning travel-lifestyle series on NESN and NESN+, hosted by Greg Boghosian, exploring the best of New England.">
+<meta property="og:title" content="New England Traveler">
+<meta property="og:description" content="7-time Emmy Award-winning travel-lifestyle series on NESN and NESN+.">
+<meta property="og:image" content="https://newenglandtravelertv.com/assets/og-image.png">
+<meta property="og:url" content="https://newenglandtravelertv.com/">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;1,700;1,800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo" aria-label="New England Traveler home">
+      <img src="assets/net-logo-white.svg" alt="New England Traveler" width="756" height="239">
+    </a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span>
+    </button>
+    <nav class="nav__menu" id="menu" aria-label="Main">
+      <a href="#episodes">Episodes</a>
+      <a href="#commercials">Commercials</a>
+      <a href="#sponsors">Sponsors</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO: replace the placeholder div with <img src="assets/photos/hero.jpg" alt="..."> when the hero shot arrives -->
+  <section class="hero">
+    <div class="hero__media ph ph--hero" role="img" aria-label="Hero photo placeholder">
+      <span class="ph__label">Hero shot of Greg on location</span>
+    </div>
+    <div class="hero__shade"></div>
+    <div class="hero__content wrap">
+      <p class="eyebrow">7-time Emmy Award-winning</p>
+      <h1>Exploring the best<br>of New England.</h1>
+      <p class="hero__sub">A travel-lifestyle series on NESN and NESN+, hosted by Greg Boghosian.</p>
+      <div class="hero__ctas">
+        <a class="btn btn--orange" href="#episodes">Watch episodes</a>
+        <a class="btn btn--ghost" href="#contact">Become a sponsor</a>
+      </div>
+      <div class="hero__networks">
+        <span>Watch on</span>
+        <img src="assets/nesn-white.png" alt="NESN" height="22">
+        <img src="assets/nesnplus-white.png" alt="NESN+" height="22">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="episodes">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="eyebrow eyebrow--dark">Episodes</p>
+        <h2>On the road</h2>
+        <a class="link-arrow" href="https://www.youtube.com/@NewEnglandTravelerTV" target="_blank" rel="noopener">All episodes on YouTube</a>
+      </div>
+      <div class="grid grid--video" data-videos="episodes"></div>
+    </div>
+  </section>
+
+  <section class="section section--navy" id="commercials">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="eyebrow">Commercials</p>
+        <h2>Spots from our partners</h2>
+      </div>
+      <div class="grid grid--video" data-videos="commercials"></div>
+    </div>
+  </section>
+
+  <section class="section" id="sponsors">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="eyebrow eyebrow--dark">Sponsors</p>
+        <h2>Our partners</h2>
+        <p class="section__lede">The businesses that help bring New England Traveler to viewers across the region.</p>
+      </div>
+      <div class="sponsors" data-sponsors></div>
+    </div>
+  </section>
+
+  <section class="section section--cream" id="about">
+    <div class="wrap about">
+      <div class="about__photo ph" role="img" aria-label="Photo placeholder">
+        <span class="ph__label">Greg on set</span>
+      </div>
+      <div class="about__text">
+        <p class="eyebrow eyebrow--dark">About the show</p>
+        <h2>Hosted by Greg Boghosian</h2>
+        <p>New England Traveler is a travel-lifestyle series on New England Sports Network (NESN) exploring the best of New England, from coastal towns and scenic railroads to family attractions and local history.</p>
+        <p>Greg Boghosian is the series host and executive producer.</p>
+        <div class="emmy">
+          <div class="emmy__num">7</div>
+          <div class="emmy__txt"><strong>Emmy Awards</strong><span>Award years and categories coming soon</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap awards">
+      <div class="ph ph--sq" role="img" aria-label="Emmy photo placeholder"><span class="ph__label">Emmy photo</span></div>
+      <div class="ph ph--sq" role="img" aria-label="Emmy photo placeholder"><span class="ph__label">Emmy photo</span></div>
+      <div class="ph ph--sq" role="img" aria-label="Emmy photo placeholder"><span class="ph__label">Emmy photo</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="eyebrow eyebrow--dark">Gallery</p>
+        <h2>Behind the scenes</h2>
+      </div>
+      <div class="gallery" data-gallery></div>
+    </div>
+  </section>
+
+  <section class="section section--navy contact" id="contact">
+    <div class="wrap contact__inner">
+      <p class="eyebrow">Contact</p>
+      <h2>Advertise, partner, or say hello.</h2>
+      <p class="section__lede">Sponsorship, advertising and story ideas are always welcome.</p>
+      <a class="btn btn--orange btn--lg" href="mailto:netravelertv@gmail.com">netravelertv@gmail.com</a>
+      <div class="socials">
+        <a href="https://www.youtube.com/@NewEnglandTravelerTV" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/newenglandtravelertv/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.1a6.7 6.7 0 1 0 0 13.4 6.7 6.7 0 0 0 0-13.4zm0 11a4.3 4.3 0 1 1 0-8.6 4.3 4.3 0 0 1 0 8.6zm6.9-11.3a1.6 1.6 0 1 1-3.1 0 1.6 1.6 0 0 1 3.1 0z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/NewEnglandTravelerTV" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <img src="assets/net-logo-white.svg" alt="New England Traveler" class="footer__logo" width="756" height="239">
+    <div class="footer__nets">
+      <img src="assets/nesn-white.png" alt="NESN" height="18">
+      <img src="assets/nesnplus-white.png" alt="NESN+" height="18">
+    </div>
+    <p>&copy; <span id="yr">2026</span> New England Traveler. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="content.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
