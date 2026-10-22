@@ -75,6 +75,7 @@ p { margin: 0 0 1em; }
 .hero__media { position: absolute; inset: 0; }
 .hero__media img { width: 100%; height: 100%; object-fit: cover; }
 .ph--hero .ph__label { position: absolute; top: 46%; right: 8%; }
+@media (max-width: 760px) { .ph--hero .ph__label { top: 90px; right: auto; left: var(--pad); } .hero h1 br { display: none; } }
 .hero__shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,30,58,.55) 0%, rgba(11,30,58,0) 30%, rgba(11,30,58,.25) 55%, rgba(11,30,58,.92) 100%); }
 .hero__content { position: relative; width: 100%; padding-top: 140px; padding-bottom: clamp(48px, 8vh, 88px); }
 .hero h1 { font-size: clamp(3rem, 8.5vw, 6.6rem); margin-bottom: .25em; text-shadow: 0 2px 24px rgba(0,0,0,.25); }
@@ -110,7 +111,7 @@ a.vcard:hover .vcard__thumb img { transform: scale(1.04); }
 .section--navy .vcard__thumb.ph { background-color: var(--ocean-2); }
 
 /* Sponsors */
-.sponsors { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 16px; }
+.sponsors { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 16px; }
 .sponsor { aspect-ratio: 3 / 2; display: grid; place-items: center; padding: 20px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; transition: border-color .2s, transform .2s; }
 a.sponsor:hover { border-color: var(--orange); transform: translateY(-2px); }
 .sponsor img { max-height: 70px; width: auto; object-fit: contain; }
@@ -136,7 +137,7 @@ a.sponsor:hover { border-color: var(--orange); transform: translateY(-2px); }
 }
 
 /* Gallery */
-.gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 220px; gap: 12px; }
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 220px; gap: 12px; grid-auto-flow: dense; }
 .gitem { margin: 0; border-radius: var(--radius); overflow: hidden; position: relative; }
 .gitem img { width: 100%; height: 100%; object-fit: cover; }
 .gitem figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 24px 12px 10px; font-size: .85rem; color: #fff; background: linear-gradient(transparent, rgba(11,30,58,.85)); }
