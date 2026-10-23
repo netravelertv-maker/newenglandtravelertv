@@ -43,7 +43,31 @@ window.NET_CONTENT = {
   ],
 
   // Commercials: same format as episodes.
-  commercials: [],
+  // Grouped by sponsor. "place" shows the sponsor name under the title.
+  commercials: [
+    { title: "Cape Cod Central Railroad's Jazz Brunch Train", place: "Cape Cod Central Railroad", youtube: "https://youtu.be/cHlMdwuL0fo", length: "0:16" },
+    { title: "Cape Cod Central Railroad's Dinner Train Adventure", place: "Cape Cod Central Railroad", youtube: "https://youtu.be/bTnpmiVmhGg", length: "0:16" },
+    { title: "The Polar Express Train Ride at Cape Cod Central Railroad!", place: "Cape Cod Central Railroad", youtube: "https://youtu.be/pdN6agwsgys", length: "0:16" },
+    { title: "Jazz Brunch Train at The Cape Cod Central Railroad", place: "Cape Cod Central Railroad", youtube: "https://youtu.be/BGZB8nVRk18", length: "0:31" },
+    { title: "Five Course Dinner Train at Cape Cod Central Railroad", place: "Cape Cod Central Railroad", youtube: "https://youtu.be/LrTrnmXsYZI", length: "0:16" },
+    { title: "Conway Scenic Railroad Mountaineer", place: "Conway Scenic Railroad", youtube: "https://youtu.be/IXhqO7i4Ot8", length: "0:17" },
+    { title: "Conway Scenic Railroad in North Conway's Historic Village", place: "Conway Scenic Railroad", youtube: "https://youtu.be/L7hzqmMbkUU", length: "0:17" },
+    { title: "A Historic Train Ride Through the White Mountains", place: "Conway Scenic Railroad", youtube: "https://youtu.be/LFvr0yVUfQ8", length: "0:31" },
+    { title: "Conway Scenic Railroad's Snow Train Winter Adventure", place: "Conway Scenic Railroad", youtube: "https://youtu.be/amnXKsdcnmM", length: "0:17" },
+    { title: "Conway Scenic Railroad Valley Train", place: "Conway Scenic Railroad", youtube: "https://youtu.be/OkQi6dZJKqg", length: "0:16" },
+    { title: "Conway Scenic Railroad Cruise Ship Tours", place: "Conway Scenic Railroad", youtube: "https://youtu.be/W5sF06cqCmU", length: "0:31" },
+    { title: "Take a Trip on the Conway Scenic Railroad!", place: "Conway Scenic Railroad", youtube: "https://youtu.be/-0dMq8jyWeg", length: "0:17" },
+    { title: "Mount Washington Cog Railway Trip to the Summit!", place: "Mount Washington Cog Railway", youtube: "https://youtu.be/HtMfw_fUFNo", length: "0:31" },
+    { title: "Historic Mt. Washington Cog Railway Adventure", place: "Mount Washington Cog Railway", youtube: "https://youtu.be/VTPlztMV4AQ", length: "0:31" },
+    { title: "Snowy Adventure on The Mt. Washington Cog Railway", place: "Mount Washington Cog Railway", youtube: "https://youtu.be/VNaj9MD7rUw", length: "0:15" },
+    { title: "The Mount Washington Cog Railway Winter Adventure", place: "Mount Washington Cog Railway", youtube: "https://youtu.be/muZ2NK19u5Y", length: "0:31" },
+    { title: "Climb Aboard a Historic Train on The Mount Washington Cog Railway", place: "Mount Washington Cog Railway", youtube: "https://youtu.be/YxY5k8yqQDc", length: "0:16" },
+    { title: "Great Rail Adventures on The Mount Washington Cog Railway", place: "Mount Washington Cog Railway", youtube: "https://youtu.be/JOCFbK_XZ1A", length: "0:16" },
+    { title: "Hy-Line Cruises Harbor Cruise", place: "Hy-Line Cruises", youtube: "https://youtu.be/RUopEcdc7fQ", length: "0:31" },
+    { title: "The Cabot Theater", place: "The Cabot", youtube: "https://youtu.be/jHbm3WAEbEU", length: "0:16" },
+    { title: "Off Cabot Comedy Club", place: "Off Cabot", youtube: "https://youtu.be/j4fWR5CZG9o", length: "0:16" },
+    { title: "Woodman's of Essex: Best Clams in Massachusetts", place: "Woodman's of Essex", youtube: "https://youtu.be/b-oK3KgrTao", length: "0:31" }
+  ],
 
   // Sponsors: { name: "Business", url: "https://...", logo: "assets/sponsors/file.png" }  (use logos: [a, b] for two logos in one card)
   sponsors: [

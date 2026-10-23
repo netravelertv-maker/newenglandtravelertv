@@ -229,3 +229,4 @@ a.sponsor:hover { border-color: var(--orange); transform: translateY(-2px); }
 .more-wrap { display: flex; justify-content: center; margin-top: 36px; }
 .btn--ghost-dark { cursor: pointer; background: transparent; color: var(--navy-800); border: 2px solid var(--navy-800); }
 .btn--ghost-dark:hover { background: var(--navy-800); color: #fff; }
+button.btn--ghost { cursor: pointer; background: transparent; }

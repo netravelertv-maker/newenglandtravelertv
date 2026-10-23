@@ -19,7 +19,7 @@
       }).join('');
       return;
     }
-    var LIMIT = key === 'episodes' ? 9 : 0;
+    var LIMIT = key === 'episodes' ? 9 : 6;
     el.innerHTML = list.map(function (v, i) {
       var id = ytId(v.youtube);
       var href = id ? 'https://www.youtube.com/watch?v=' + id : esc(v.youtube);
@@ -32,11 +32,11 @@
       el.classList.add('is-collapsed');
       var more = document.createElement('div');
       more.className = 'more-wrap';
-      more.innerHTML = '<button type="button" class="btn btn--ghost-dark">Show all ' + list.length + ' episodes</button>';
+      more.innerHTML = '<button type="button" class="btn ' + (key === 'episodes' ? 'btn--ghost-dark' : 'btn--ghost') + '">Show all ' + list.length + ' ' + (key === 'episodes' ? 'episodes' : 'commercials') + '</button>';
       el.after(more);
       more.querySelector('button').addEventListener('click', function () {
         var open = el.classList.toggle('is-collapsed') === false;
-        this.textContent = open ? 'Show fewer' : 'Show all ' + list.length + ' episodes';
+        this.textContent = open ? 'Show fewer' : 'Show all ' + list.length + ' ' + (key === 'episodes' ? 'episodes' : 'commercials');
         if (!open) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     }
