@@ -66,10 +66,17 @@ window.NET_CONTENT = {
       { src: "assets/photos/aw-sunset-beach.jpg", alt: "Sun setting over calm water at Palm Beach" }
     ]},
     { place: "Los Angeles, California", photos: [
+      { src: "assets/photos/la-hollywood-sign.jpg", alt: "The Hollywood sign on the hillside above power lines", caption: "Hollywood" },
       { src: "assets/photos/la-greg-dodgers.jpg", alt: "Greg in a Dodgers jersey on the field at Dodger Stadium", caption: "Dodger Stadium" },
+      { src: "assets/photos/la-greg-live-steamers.jpg", alt: "Greg riding a miniature train at the Los Angeles Live Steamers", caption: "Los Angeles Live Steamers, Griffith Park" },
+      { src: "assets/photos/la-greg-angels-flight.jpg", alt: "Greg smiling in front of an Angels Flight railway car", caption: "Angels Flight, Downtown LA" },
       { src: "assets/photos/la-santa-monica-pier.jpg", alt: "Santa Monica Yacht Harbor arch at the pier entrance", caption: "Santa Monica Pier" },
+      { src: "assets/photos/la-walt-disney-barn.jpg", alt: "Walt Disney's red barn workshop surrounded by greenery", caption: "Walt Disney's Barn, Griffith Park" },
       { src: "assets/photos/la-dodger-stadium.jpg", alt: "Packed Dodger Stadium during a game", caption: "Game day at Dodger Stadium" },
+      { src: "assets/photos/la-griffith-merry-go-round.jpg", alt: "Greg in front of the Griffith Park Merry-Go-Round", caption: "Griffith Park Merry-Go-Round" },
       { src: "assets/photos/la-farmers-market.jpg", alt: "Farmers Market clock tower lit at night", caption: "The Original Farmers Market" },
+      { src: "assets/photos/la-angels-flight.jpg", alt: "Orange Angels Flight funicular car on its track", caption: "Angels Flight" },
+      { src: "assets/photos/la-bobs-coffee-doughnuts.jpg", alt: "Bob's Coffee and Doughnuts counter at the Farmers Market", caption: "Bob's Coffee & Doughnuts, Farmers Market" },
       { src: "assets/photos/la-world-series-trophies.jpg", alt: "Dodgers World Series trophies on display", caption: "World Series trophies" },
       { src: "assets/photos/la-venice-boardwalk.jpg", alt: "Venice Beach boardwalk lined with palms and shops", caption: "Venice Beach boardwalk" }
     ]}
