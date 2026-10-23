@@ -27,7 +27,7 @@ window.NET_CONTENT = {
   // New England gallery: { src, alt, caption, credit }
   gallery: [
     { src: "assets/photos/crawford-gateway-255.jpg", alt: "Red 255 locomotive in deep snow at the Gateway, Crawford Notch", caption: "Crawford Notch, New Hampshire", credit: "Mike Lacey" },
-    { src: "assets/photos/greg-cockpit.jpg", alt: "Greg Boghosian in a cockpit wearing a headset, giving a thumbs up", caption: "Taking flight" },
+    { src: "assets/photos/greg-cockpit.jpg", alt: "Greg Boghosian in a cockpit wearing a headset, giving a thumbs up", caption: "Taking flight with CHI Aerospace, Pease Airport, Portsmouth, NH" },
     { src: "assets/photos/bts-salem-oysters.jpg", alt: "Two cameras filming a platter of oysters at a restaurant", caption: "Rolling on the oysters, Salem, Massachusetts" },
     { src: "assets/photos/hammond-castle.jpg", alt: "Stone towers of Hammond Castle under a bright sun", caption: "Hammond Castle, Gloucester, Massachusetts" },
     { src: "assets/photos/bts-ticonderoga-crew.jpg", alt: "Film crew setting up beside the steamboat Ticonderoga", caption: "Behind the scenes, Shelburne Museum, Vermont" },
@@ -36,10 +36,10 @@ window.NET_CONTENT = {
     { src: "assets/photos/bts-locomotive-cab.jpg", alt: "Camera operator filming an engineer inside a locomotive cab", caption: "Filming in the cab, Conway Scenic Railroad" },
     { src: "assets/photos/shelburne-round-barn.jpg", alt: "Red round barn under a blue sky", caption: "Round Barn, Shelburne Museum, Vermont" },
     { src: "assets/photos/pumpkin-field.jpg", alt: "Field of orange pumpkins on a sunny fall day", caption: "Fall on the North Shore, Massachusetts" },
-    { src: "assets/photos/greg-hangar.jpg", alt: "Greg standing in front of a blue floatplane in a hangar", caption: "On location with floatplanes" },
+    { src: "assets/photos/greg-hangar.jpg", alt: "Greg standing in front of a blue floatplane in a CHI Aerospace hangar", caption: "CHI Aerospace, Pease Airport, Portsmouth, NH" },
     { src: "assets/photos/cog-railway.jpg", alt: "Red Cog Railway locomotive and coach in deep snow", caption: "Mount Washington Cog Railway, New Hampshire" },
     { src: "assets/photos/bts-hammond-corridor.jpg", alt: "Camera operator filming in an arched stone corridor", caption: "Behind the scenes, Hammond Castle" },
-    { src: "assets/photos/big-e-night.jpg", alt: "Greg at night in front of a lit Ferris wheel at the fair", caption: "The Big E, West Springfield, Massachusetts" },
+    { src: "assets/photos/big-e-night.jpg", alt: "Greg and his wife Deborah at night in front of a lit Ferris wheel at the fair", caption: "With Deborah at The Big E, West Springfield, Massachusetts" },
     { src: "assets/photos/vermont-teddy-bear.jpg", alt: "Greg with a staff member at the Teddy Bear Hospital", caption: "Vermont Teddy Bear, Vermont" },
     { src: "assets/photos/crawford-plow-extra.jpg", alt: "Green snowplow and red locomotive in fresh snow", caption: "Plow Extra, Crawford Notch, New Hampshire", credit: "Mike Lacey" },
     { src: "assets/photos/bts-rockport.jpg", alt: "Camera operator filming a shop on Bearskin Neck", caption: "Bearskin Neck, Rockport, Massachusetts" },
