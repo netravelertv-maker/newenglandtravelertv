@@ -31,6 +31,7 @@
       <a href="#sponsors">Sponsors</a>
       <a href="#about">About</a>
       <a href="#gallery">Gallery</a>
+      <a href="#beyond">Beyond</a>
       <a href="#contact" class="nav__cta">Contact</a>
     </nav>
   </div>
@@ -39,9 +40,10 @@
 <main>
   <!-- HERO: replace the placeholder div with <img src="assets/photos/hero.jpg" alt="..."> when the hero shot arrives -->
   <section class="hero">
-    <div class="hero__media ph ph--hero" role="img" aria-label="Hero photo placeholder">
-      <span class="ph__label">Hero shot of Greg on location</span>
+    <div class="hero__media">
+      <img src="assets/photos/hero-crawford-depot.jpg" alt="Crawford Depot and red locomotive 255 in winter snow, Crawford Notch, New Hampshire" fetchpriority="high">
     </div>
+    <p class="hero__credit">Crawford Notch, NH. Photo: Mike Lacey</p>
     <div class="hero__shade"></div>
     <div class="hero__content wrap">
       <p class="eyebrow">7-time Emmy Award-winning</p>
@@ -93,9 +95,10 @@
 
   <section class="section section--cream" id="about">
     <div class="wrap about">
-      <div class="about__photo ph" role="img" aria-label="Photo placeholder">
-        <span class="ph__label">Greg on set</span>
-      </div>
+      <figure class="about__photo">
+        <img src="assets/photos/about-interview-ticonderoga.jpg" alt="Greg Boghosian interviewing a guest in front of the steamboat Ticonderoga" loading="lazy">
+        <figcaption>On camera at Shelburne Museum, Vermont</figcaption>
+      </figure>
       <div class="about__text">
         <p class="eyebrow eyebrow--dark">About the show</p>
         <h2>Hosted by Greg Boghosian</h2>
@@ -121,6 +124,17 @@
         <h2>Behind the scenes</h2>
       </div>
       <div class="gallery" data-gallery></div>
+    </div>
+  </section>
+
+  <section class="section section--cream" id="beyond">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="eyebrow eyebrow--dark">Beyond New England</p>
+        <h2>Further afield</h2>
+        <p class="section__lede">New England Traveler on the road, from the Caribbean coast to the West Coast.</p>
+      </div>
+      <div data-beyond></div>
     </div>
   </section>
 
@@ -155,6 +169,11 @@
     <p>&copy; <span id="yr">2026</span> New England Traveler. All rights reserved.</p>
   </div>
 </footer>
+
+<div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lightbox__close" aria-label="Close photo">&times;</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+</div>
 
 <script src="content.js"></script>
 <script src="main.js"></script>
