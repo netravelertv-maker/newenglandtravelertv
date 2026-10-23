@@ -45,10 +45,8 @@ window.NET_CONTENT = {
   // Commercials: same format as episodes.
   // Grouped by sponsor. "place" shows the sponsor name under the title.
   commercials: [
-    { title: "Cape Cod Central Railroad's Jazz Brunch Train", place: "Cape Cod Central Railroad", youtube: "https://youtu.be/cHlMdwuL0fo", length: "0:16" },
     { title: "Cape Cod Central Railroad's Dinner Train Adventure", place: "Cape Cod Central Railroad", youtube: "https://youtu.be/bTnpmiVmhGg", length: "0:16" },
     { title: "The Polar Express Train Ride at Cape Cod Central Railroad!", place: "Cape Cod Central Railroad", youtube: "https://youtu.be/pdN6agwsgys", length: "0:16" },
-    { title: "Jazz Brunch Train at The Cape Cod Central Railroad", place: "Cape Cod Central Railroad", youtube: "https://youtu.be/BGZB8nVRk18", length: "0:31" },
     { title: "Five Course Dinner Train at Cape Cod Central Railroad", place: "Cape Cod Central Railroad", youtube: "https://youtu.be/LrTrnmXsYZI", length: "0:16" },
     { title: "Conway Scenic Railroad Mountaineer", place: "Conway Scenic Railroad", youtube: "https://youtu.be/IXhqO7i4Ot8", length: "0:17" },
     { title: "Conway Scenic Railroad in North Conway's Historic Village", place: "Conway Scenic Railroad", youtube: "https://youtu.be/L7hzqmMbkUU", length: "0:17" },
