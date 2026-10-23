@@ -35,7 +35,8 @@
     var s = C.sponsors || [];
     sp.innerHTML = s.length ? s.map(function (x) {
       return '<a class="sponsor" href="' + esc(x.url) + '" target="_blank" rel="noopener" title="' + esc(x.name) + '">' +
-        (x.logo ? '<img loading="lazy" src="' + esc(x.logo) + '" alt="' + esc(x.name) + '">' : '<span>' + esc(x.name) + '</span>') + '</a>';
+        (x.logos ? '<span class="sponsor__pair">' + x.logos.map(function (l) { return '<img loading="lazy" src="' + esc(l) + '" alt="">'; }).join('') + '</span><span class="sr-only">' + esc(x.name) + '</span>'
+          : x.logo ? '<img loading="lazy" src="' + esc(x.logo) + '" alt="' + esc(x.name) + '">' : '<span>' + esc(x.name) + '</span>') + '</a>';
     }).join('') : [1, 2, 3, 4, 5, 6].map(function () { return '<div class="sponsor sponsor--ph"><span>Sponsor logo</span></div>'; }).join('');
   }
 

@@ -12,8 +12,17 @@ window.NET_CONTENT = {
   // Commercials: same format as episodes.
   commercials: [],
 
-  // Sponsors: { name: "Business", url: "https://...", logo: "assets/sponsors/file.png" }
-  sponsors: [],
+  // Sponsors: { name: "Business", url: "https://...", logo: "assets/sponsors/file.png" }  (use logos: [a, b] for two logos in one card)
+  sponsors: [
+    { name: "Cape Cod Central Railroad", url: "https://www.capetrain.com/", logo: "assets/sponsors/cape-cod-central-railroad.png" },
+    { name: "Conway Scenic Railroad", url: "https://www.conwayscenic.com/", logo: "assets/sponsors/conway-scenic-railroad.png" },
+    { name: "Mount Washington Cog Railway", url: "https://www.thecog.com/", logo: "assets/sponsors/mount-washington-cog-railway.png" },
+    { name: "Hy-Line Cruises", url: "https://hylinecruises.com/", logo: "assets/sponsors/hy-line-cruises.png" },
+    { name: "The Cabot and Off Cabot", url: "https://thecabot.org/", logos: ["assets/sponsors/the-cabot.png", "assets/sponsors/off-cabot.png"] },
+    { name: "Wheelworks", url: "https://www.wheelworks.com/", logo: "assets/sponsors/wheelworks.png" },
+    { name: "Witch City Walking Tours", url: "https://witchcitywalkingtours.com/", logo: "assets/sponsors/witch-city-walking-tours.png" },
+    { name: "Woodman's of Essex", url: "https://www.woodmans.com/", logo: "assets/sponsors/woodmans-of-essex.png" }
+  ],
 
   // New England gallery: { src, alt, caption, credit }
   gallery: [

@@ -122,10 +122,15 @@ a.vcard:hover .vcard__thumb img { transform: scale(1.04); }
 .section--navy .vcard__thumb.ph { background-color: var(--ocean-2); }
 
 /* Sponsors */
-.sponsors { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 16px; }
-.sponsor { aspect-ratio: 3 / 2; display: grid; place-items: center; padding: 20px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; transition: border-color .2s, transform .2s; }
+.sponsors { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 18px; }
+.sponsor { min-width: 0; aspect-ratio: 16 / 10; display: grid; place-items: center; padding: 22px 26px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; transition: border-color .2s, transform .2s; }
 a.sponsor:hover { border-color: var(--orange); transform: translateY(-2px); }
-.sponsor img { max-height: 70px; width: auto; object-fit: contain; }
+.sponsor img { max-height: 110px; max-width: 100%; width: auto; height: auto; object-fit: contain; }
+.sponsor__pair { display: flex; align-items: center; justify-content: center; gap: 16px; width: 100%; }
+.sponsor__pair img { max-width: 55%; max-height: 90px; }
+.sponsor__pair img + img { max-width: 38%; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@media (max-width: 560px) { .sponsors { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } .sponsor { padding: 12px 14px; aspect-ratio: auto; height: 112px; } .sponsor img { max-height: 84px; } .sponsor__pair { gap: 8px; } }
 .sponsor span { font-family: var(--display); font-weight: 600; letter-spacing: .1em; text-transform: uppercase; font-size: .85rem; color: var(--muted); text-align: center; }
 .sponsor--ph { border-style: dashed; background: transparent; }
 
