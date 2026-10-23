@@ -38,7 +38,7 @@ window.NET_CONTENT = {
   // Beyond New England: each destination gets its own group.
   // Leave photos empty to show "coming soon".
   beyond: [
-    { place: "Playa Mujeres, Mexico", note: "Atelier Playa Mujeres", photos: [
+    { place: "Cancún, Mexico", note: "Atelier Playa Mujeres", photos: [
       { src: "assets/photos/mx-pool.jpg", alt: "Long turquoise resort pool lined with palm trees" },
       { src: "assets/photos/mx-chefs.jpg", alt: "Greg with two chefs at an outdoor food station" },
       { src: "assets/photos/mx-greg-water.jpg", alt: "Greg in a life vest and sun hat on turquoise water" },
