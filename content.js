@@ -6,8 +6,41 @@
 window.NET_CONTENT = {
 
   // Episodes: paste any YouTube link (watch, youtu.be, or shorts).
-  // { title: "Episode title", place: "Town, State", youtube: "https://youtu.be/XXXX" }
-  episodes: [],
+  // { title: "Episode title", place: "Town, State", youtube: "https://youtu.be/XXXX", length: "21:32" }
+  // Listed newest first. The first 9 show; the rest appear with "Show all episodes".
+  episodes: [
+    { ep: 31, title: "Winter Wonderland", youtube: "https://youtu.be/mNEnjBknzTI", length: "21:32" },
+    { ep: 30, title: "Gutterball!", youtube: "https://youtu.be/6lPNKcVjT5w", length: "21:32" },
+    { ep: 29, title: "Sweet Life on Cape Cod", youtube: "https://youtu.be/DhQPhveJ-G8", length: "21:32" },
+    { ep: 28, title: "Flying Over Chatham", youtube: "https://youtu.be/VCRBVg_cjiE", length: "21:32" },
+    { ep: 27, title: "Bon Bini Aruba!", youtube: "https://youtu.be/Qka5apVmNi0", length: "20:02" },
+    { ep: 26, title: "Rhode Trip!", youtube: "https://youtu.be/vXnifl3zpi4", length: "21:32" },
+    { ep: 25, title: "Great Trains of New Hampshire", youtube: "https://youtu.be/wNG5ZQ1UG8E", length: "21:32" },
+    { ep: 24, title: "Magically Delicious!", youtube: "https://youtu.be/buJZJ8N9oqo", length: "21:32" },
+    { ep: 23, title: "Weekend on the Cape", youtube: "https://youtu.be/gCiBalwLKKo", length: "21:32" },
+    { ep: 22, title: "Plymouth: No Rock Unturned", youtube: "https://youtu.be/bBQc-wL-ogI", length: "21:32" },
+    { ep: 21, title: "A Tale of Two Rivers - Essex and Merrimack", youtube: "https://youtu.be/Gxc_fXAFlN0", length: "21:31" },
+    { ep: 20, title: "Historic Nantucket Island", youtube: "https://youtu.be/Ha_tE7LDLEs", length: "21:32" },
+    { ep: 19, title: "Witches and Pirates!", youtube: "https://youtu.be/az0Q1xUqrgs", length: "21:31" },
+    { ep: 18, title: "Mount Washington Valley Adventure", youtube: "https://youtu.be/iTVb4N77LBA", length: "21:31" },
+    { ep: 17, title: "The Polar Express Train Ride - Journey to the North Pole", youtube: "https://youtu.be/0c_n6wi_oQU", length: "21:32" },
+    { ep: 16, title: "White Mountains Adventure Part Two", youtube: "https://youtu.be/nvuxJ1JTYmQ", length: "21:31" },
+    { ep: 15, title: "Destination Salem, Part Two", youtube: "https://youtu.be/SFM-NL1u7kA", length: "21:32" },
+    { ep: 14, title: "Destination Salem, Part One", youtube: "https://youtu.be/rIwl-Ub4UTI", length: "21:32" },
+    { ep: 13, title: "White Mountains Adventure Part One", youtube: "https://youtu.be/t5kVxxhyQOY", length: "21:31" },
+    { ep: 12, title: "Cape Cod Central Railroad", youtube: "https://youtu.be/iCQ09GbBSBI", length: "21:31" },
+    { ep: 11, title: "Historic Beverly: City on the Sea", youtube: "https://youtu.be/lZ_kSfElV1w", length: "21:32" },
+    { ep: 10, title: "Boston and Gloucester Waterfront Adventure", youtube: "https://youtu.be/er1r5wMKfEk", length: "19:49" },
+    { ep: 9, title: "Cooking with Charlie Moore", youtube: "https://youtu.be/FtFOCI6SDbY", length: "21:01" },
+    { ep: 8, title: "The Mount Washington Cog Railway", youtube: "https://youtu.be/NjkIdL9_Xgc", length: "21:20" },
+    { ep: 7, title: "The Dark History of Salem and Danvers, Massachusetts", youtube: "https://youtu.be/NmJK_yNXUa4", length: "20:48" },
+    { ep: 6, title: "Best Craft Spirits in Gloucester, Massachusetts", youtube: "https://youtu.be/aJAl_ZoZDl4", length: "20:48" },
+    { ep: 5, title: "Best Food in Portland, Maine!", youtube: "https://youtu.be/kRlJLkwVNR8", length: "20:53" },
+    { ep: 4, title: "New England Aquarium", youtube: "https://youtu.be/yNu1ZJIzPZQ", length: "21:27" },
+    { ep: 3, title: "Cannon Mountain and The Mountain View Grand Hotel", youtube: "https://youtu.be/ZQfQLTcBC3o", length: "21:32" },
+    { ep: 2, title: "Candy Factories of Massachusetts", youtube: "https://youtu.be/LaJKaFFwW3Y", length: "22:32" },
+    { ep: 1, title: "New England Dogsledding", youtube: "https://youtu.be/NuxYuMw8YqI", length: "21:21" }
+  ],
 
   // Commercials: same format as episodes.
   commercials: [],

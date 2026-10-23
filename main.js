@@ -19,14 +19,27 @@
       }).join('');
       return;
     }
-    el.innerHTML = list.map(function (v) {
+    var LIMIT = key === 'episodes' ? 9 : 0;
+    el.innerHTML = list.map(function (v, i) {
       var id = ytId(v.youtube);
       var href = id ? 'https://www.youtube.com/watch?v=' + id : esc(v.youtube);
       var thumb = id ? 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg' : '';
-      return '<a class="vcard" href="' + href + '" target="_blank" rel="noopener">' +
+      return '<a class="vcard' + (LIMIT && i >= LIMIT ? ' is-extra' : '') + '" href="' + href + '" target="_blank" rel="noopener">' +
         '<div class="vcard__thumb">' + (thumb ? '<img loading="lazy" src="' + thumb + '" alt="">' : '') + '<span class="play" aria-hidden="true"></span></div>' +
-        '<div class="vcard__meta"><h3>' + esc(v.title) + '</h3>' + (v.place ? '<p>' + esc(v.place) + '</p>' : '') + '</div></a>';
+        '<div class="vcard__meta"><h3>' + esc(v.title) + '</h3>' + (v.ep || v.place || v.length ? '<p>' + esc([v.ep ? 'Episode ' + v.ep : '', v.place, v.length].filter(Boolean).join(' · ')) + '</p>' : '') + '</div></a>';
     }).join('');
+    if (LIMIT && list.length > LIMIT) {
+      el.classList.add('is-collapsed');
+      var more = document.createElement('div');
+      more.className = 'more-wrap';
+      more.innerHTML = '<button type="button" class="btn btn--ghost-dark">Show all ' + list.length + ' episodes</button>';
+      el.after(more);
+      more.querySelector('button').addEventListener('click', function () {
+        var open = el.classList.toggle('is-collapsed') === false;
+        this.textContent = open ? 'Show fewer' : 'Show all ' + list.length + ' episodes';
+        if (!open) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
   });
 
   // Sponsors

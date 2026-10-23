@@ -223,3 +223,9 @@ a.sponsor:hover { border-color: var(--orange); transform: translateY(-2px); }
 .hero .eyebrow { font-size: clamp(1.05rem, 1.5vw, 1.25rem); font-weight: 700; letter-spacing: .16em; color: var(--orange-hi); text-shadow: 0 1px 12px rgba(0,0,0,.45); margin-bottom: .9rem; }
 
 .contact__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+
+/* Episodes: show first 9, expand for the rest */
+.grid--video.is-collapsed .vcard.is-extra { display: none; }
+.more-wrap { display: flex; justify-content: center; margin-top: 36px; }
+.btn--ghost-dark { cursor: pointer; background: transparent; color: var(--navy-800); border: 2px solid var(--navy-800); }
+.btn--ghost-dark:hover { background: var(--navy-800); color: #fff; }
