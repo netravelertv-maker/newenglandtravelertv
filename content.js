@@ -145,6 +145,23 @@ window.NET_CONTENT = {
       { src: "assets/photos/la-bobs-coffee-doughnuts.jpg", alt: "Bob's Coffee and Doughnuts counter at the Farmers Market", caption: "Bob's Coffee & Doughnuts, Farmers Market" },
       { src: "assets/photos/la-world-series-trophies.jpg", alt: "Dodgers World Series trophies on display", caption: "World Series trophies" },
       { src: "assets/photos/la-venice-boardwalk.jpg", alt: "Venice Beach boardwalk lined with palms and shops", caption: "Venice Beach boardwalk" }
+    ]},
+    { place: "Marceline & Kansas City, Missouri", photos: [
+      { src: "assets/photos/mo-greg-filming-locomotive.jpg", alt: "Greg filming with his camera beside a vintage steam locomotive", caption: "Filming in Marceline" },
+      { src: "assets/photos/mo-greg-hometown-museum.jpg", alt: "Greg smiling in front of the Walt Disney Hometown Museum", caption: "Walt Disney Hometown Museum, Marceline" },
+      { src: "assets/photos/mo-kaye-malins.jpg", alt: "Greg with Kaye Malins at the Walt Disney Hometown Museum front desk", caption: "With Kaye Malins, Executive Director, Walt Disney Hometown Museum" },
+      { src: "assets/photos/mo-disney-family-farm.jpg", alt: "Welcome sign for the Disney Family Farm, Walt's Dreaming Tree site and barn site", caption: "The Disney Family Farm" },
+      { src: "assets/photos/mo-dreaming-tree.jpg", alt: "Sign with a historic photo of the Original Dreaming Tree", caption: "Walt's Original Dreaming Tree" },
+      { src: "assets/photos/mo-disney-barn.jpg", alt: "Weathered wooden barn under a tree on the Disney family farm", caption: "The Disney family barn" },
+      { src: "assets/photos/mo-walt-disney-elementary.jpg", alt: "Covered entrance of Walt Disney Elementary School", caption: "Walt Disney Elementary, Marceline" },
+      { src: "assets/photos/mo-greg-boyhood-home.jpg", alt: "Greg taking a selfie in front of Walt Disney's boyhood home", caption: "Walt Disney's boyhood home, Marceline" },
+      { src: "assets/photos/mo-lee-hoover-autopia.jpg", alt: "Lee Hoover sitting in a restored Midget Autopia car in his garage", caption: "Lee Hoover restoring the original Midget Autopia cars" },
+      { src: "assets/photos/mo-coca-cola-sign.jpg", alt: "Vintage Coca-Cola wall sign on the Hutcheson's Furniture building", caption: "Coca-Cola wall sign, Marceline" },
+      { src: "assets/photos/mo-santa-fe-caboose.jpg", alt: "Red Santa Fe caboose displayed in a park", caption: "Santa Fe caboose, Marceline" },
+      { src: "assets/photos/mo-dan-viets-laugh-o-gram.jpg", alt: "Greg with Dan Viets in front of a mural on the Laugh-O-Gram Studio building", caption: "With Dan Viets of Thank You Walt Disney at the Laugh-O-Gram Studio, Kansas City" },
+      { src: "assets/photos/mo-kc-skyline-union-station.jpg", alt: "Kansas City skyline rising behind Union Station", caption: "Kansas City skyline and Union Station" },
+      { src: "assets/photos/mo-union-station-hall.jpg", alt: "Grand hall inside Kansas City Union Station", caption: "Union Station, Kansas City" },
+      { src: "assets/photos/mo-sunset-drive.jpg", alt: "Sunset over an open Missouri highway", caption: "On the road in Missouri" }
     ]}
   ]
 };
