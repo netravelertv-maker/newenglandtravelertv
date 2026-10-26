@@ -89,16 +89,39 @@
   // Lightbox
   var lb = document.querySelector('.lightbox');
   if (lb) {
-    var lbImg = lb.querySelector('img'), lbCap = lb.querySelector('figcaption'), lastBtn = null;
+    var lbImg = lb.querySelector('img'), lbCap = lb.querySelector('figcaption'), lbCount = lb.querySelector('.lightbox__count'), lastBtn = null, set = [], idx = 0;
+    var show = function (i) {
+      idx = (i + set.length) % set.length; var b = set[idx];
+      lbImg.src = b.dataset.full; lbImg.alt = b.querySelector('img').alt; lbCap.textContent = b.dataset.cap || '';
+      lbCount.textContent = set.length > 1 ? (idx + 1) + ' / ' + set.length : '';
+      lb.classList.toggle('lightbox--single', set.length < 2);
+      new Image().src = set[(idx + 1) % set.length].dataset.full;
+    };
     var close = function () { lb.hidden = true; document.body.style.overflow = ''; if (lastBtn) lastBtn.focus(); };
     document.addEventListener('click', function (e) {
       var b = e.target.closest('.gitem__btn');
       if (b) {
-        lastBtn = b; lbImg.src = b.dataset.full; lbImg.alt = b.querySelector('img').alt; lbCap.textContent = b.dataset.cap || '';
+        lastBtn = b; var group = b.closest('.dest') || b.closest('section') || document;
+        set = Array.prototype.slice.call(group.querySelectorAll('.gitem__btn')); show(set.indexOf(b));
         lb.hidden = false; document.body.style.overflow = 'hidden'; lb.querySelector('.lightbox__close').focus();
-      } else if (!lb.hidden && (e.target === lb || e.target.closest('.lightbox__close'))) { close(); }
+      } else if (!lb.hidden) {
+        if (e.target.closest('.lightbox__prev')) show(idx - 1);
+        else if (e.target.closest('.lightbox__next')) show(idx + 1);
+        else if (e.target === lb || e.target.closest('.lightbox__close')) close();
+      }
     });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !lb.hidden) close(); });
+    document.addEventListener('keydown', function (e) {
+      if (lb.hidden) return;
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowRight') show(idx + 1);
+      else if (e.key === 'ArrowLeft') show(idx - 1);
+    });
+    var sx = null;
+    lb.addEventListener('touchstart', function (e) { sx = e.touches[0].clientX; }, { passive: true });
+    lb.addEventListener('touchend', function (e) {
+      if (sx === null) return; var dx = e.changedTouches[0].clientX - sx; sx = null;
+      if (Math.abs(dx) > 50) show(idx + (dx < 0 ? 1 : -1));
+    });
   }
 
   // Mobile menu

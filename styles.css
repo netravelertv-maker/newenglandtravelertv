@@ -182,6 +182,13 @@ a.sponsor:hover { border-color: var(--orange); transform: translateY(-2px); }
 .lightbox img { max-height: 84vh; width: auto; max-width: 100%; margin: 0 auto; border-radius: 4px; }
 .lightbox figcaption { color: rgba(255,255,255,.85); margin-top: 12px; font-size: .95rem; }
 .lightbox__close { position: absolute; top: 14px; right: 18px; width: 48px; height: 48px; font-size: 2.2rem; line-height: 1; color: #fff; background: none; border: 0; cursor: pointer; }
+.lightbox__nav { position: absolute; top: 50%; transform: translateY(-50%); width: 56px; height: 56px; border-radius: 50%; border: 0; background: rgba(255,255,255,.14); color: #fff; font-size: 2.6rem; line-height: 1; padding-bottom: 6px; cursor: pointer; z-index: 2; transition: background .2s; }
+.lightbox__nav:hover, .lightbox__nav:focus-visible { background: var(--orange); }
+.lightbox__prev { left: 18px; }
+.lightbox__next { right: 18px; }
+.lightbox--single .lightbox__nav { display: none; }
+.lightbox__count { color: rgba(255,255,255,.6); font-size: .85rem; margin: 4px 0 0; letter-spacing: .08em; }
+@media (max-width: 640px) { .lightbox__nav { width: 44px; height: 44px; font-size: 2rem; background: rgba(6,16,32,.6); } .lightbox__prev { left: 8px; } .lightbox__next { right: 8px; } }
 
 /* Real photos in hero and about */
 .hero__media img { object-position: 62% 50%; }
