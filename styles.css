@@ -265,3 +265,11 @@ button.btn--ghost { cursor: pointer; background: transparent; }
   .nav:not(.is-solid) .nav__logo img { width: min(70vw, 506px); }
   .hero__content { padding-top: 270px; }
 }
+/* Vertical phones: keep logo, icons and menu button on one line when scrolled */
+@media (max-width: 480px) {
+  .nav.is-solid .nav__inner { flex-wrap: nowrap; gap: 12px; }
+  .nav.is-solid .nav__socials--m { gap: 12px; }
+  .nav.is-solid .nav__socials--m svg { width: 24px; height: 24px; }
+  .nav.is-solid .nav__logo img { width: min(218px, calc(100vw - 212px)); }
+}
+@media (max-width: 360px) { .nav:not(.is-solid) .nav__logo img { width: calc(100vw - 112px); } }
