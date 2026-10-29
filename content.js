@@ -9,6 +9,7 @@ window.NET_CONTENT = {
   // { title: "Episode title", place: "Town, State", youtube: "https://youtu.be/XXXX", length: "21:32" }
   // Listed newest first. The first 9 show; the rest appear with "Show all episodes".
   episodes: [
+    { ep: 32, title: "The Los Angeles Traveler", youtube: "https://youtu.be/adpNjIrgC0Y" },
     { ep: 31, title: "Winter Wonderland", youtube: "https://youtu.be/mNEnjBknzTI", length: "21:32" },
     { ep: 30, title: "Gutterball!", youtube: "https://youtu.be/6lPNKcVjT5w", length: "21:32" },
     { ep: 29, title: "Sweet Life on Cape Cod", youtube: "https://youtu.be/DhQPhveJ-G8", length: "21:32" },
