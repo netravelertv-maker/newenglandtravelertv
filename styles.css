@@ -245,3 +245,23 @@ a.sponsor:hover { border-color: var(--orange); transform: translateY(-2px); }
 .btn--ghost-dark { cursor: pointer; background: transparent; color: var(--navy-800); border: 2px solid var(--navy-800); }
 .btn--ghost-dark:hover { background: var(--navy-800); color: #fff; }
 button.btn--ghost { cursor: pointer; background: transparent; }
+
+/* Mobile: social icons visible in the header, outside the menu */
+.nav__socials--m { display: none; }
+@media (max-width: 1160px) {
+  .nav__menu .nav__socials { display: none; }
+  .nav__inner { flex-wrap: wrap; row-gap: 10px; }
+  .nav__socials--m { display: flex; gap: 18px; border: 0; padding: 0; margin: 0; }
+  .nav__socials--m a { display: grid; }
+  .nav__socials--m svg { width: 32px; height: 32px; }
+  .nav:not(.is-solid) .nav__socials--m { order: 3; flex-basis: 100%; }
+  .nav.is-solid .nav__socials--m { margin-left: auto; gap: 14px; }
+  .nav.is-solid .nav__socials--m svg { width: 26px; height: 26px; }
+  .nav.is-solid .nav__inner { gap: 14px; }
+}
+@media (max-width: 420px) { .nav.is-solid .nav__logo img { width: 172px; } }
+@media (max-width: 1160px) {
+  .nav__toggle { flex-shrink: 0; }
+  .nav:not(.is-solid) .nav__logo img { width: min(70vw, 506px); }
+  .hero__content { padding-top: 270px; }
+}
