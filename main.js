@@ -23,7 +23,7 @@
     el.innerHTML = list.map(function (v, i) {
       var id = ytId(v.youtube);
       var href = id ? 'https://www.youtube.com/watch?v=' + id : esc(v.youtube);
-      var thumb = id ? 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg' : '';
+      var thumb = v.thumb || (id ? 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg' : '');
       return '<a class="vcard' + (LIMIT && i >= LIMIT ? ' is-extra' : '') + '" href="' + href + '" target="_blank" rel="noopener">' +
         '<div class="vcard__thumb">' + (thumb ? '<img loading="lazy" src="' + thumb + '" alt="">' : '') + '<span class="play" aria-hidden="true"></span></div>' +
         '<div class="vcard__meta"><h3>' + esc(v.title) + '</h3>' + (v.ep || v.place || v.length ? '<p>' + esc([v.ep ? 'Episode ' + v.ep : '', v.place, v.length].filter(Boolean).join(' · ')) + '</p>' : '') + '</div></a>';
