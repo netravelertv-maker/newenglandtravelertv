@@ -364,3 +364,6 @@ button.btn--ghost { cursor: pointer; background: transparent; }
   .nav__socials svg { width: 24px; height: 24px; }
 }
 @media (max-width: 720px) { .sched-hero { padding: 118px 0 40px; } }
+
+.sched-tag--new { background: #c8102e; margin-right: 6px; }
+.sched-next__title .sched-tag { vertical-align: middle; margin-top: 0; font-style: normal; }

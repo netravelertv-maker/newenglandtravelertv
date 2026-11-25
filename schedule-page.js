@@ -35,14 +35,14 @@
         '<td class="sched-dayname">' + (i === 0 ? x.day : '<span class="sr">' + x.day + '</span>') + '</td>' +
         '<td class="sched-date">' + (i === 0 ? MONTHS[x.p.m - 1] + ' ' + x.p.d : '<span class="sr">' + MONTHS[x.p.m - 1] + ' ' + x.p.d + '</span>') + '</td>' +
         '<td class="sched-time">' + esc(x.a.time) + '</td>' +
-        '<td class="sched-prog"><span class="sched-prog__title">' + esc(x.a.title) + '</span><span class="sched-prog__show">New England Traveler' + (x.a.ep ? ' · Episode ' + x.a.ep : '') + '</span>' + (x === next ? '<span class="sched-tag">Up next</span>' : '') + '</td>' +
+        '<td class="sched-prog"><span class="sched-prog__title">' + esc(x.a.title) + '</span><span class="sched-prog__show">New England Traveler' + (x.a.ep ? ' · Episode ' + x.a.ep : '') + '</span>' + (x.a.isNew ? '<span class="sched-tag sched-tag--new">New</span>' : '') + (x === next ? '<span class="sched-tag">Up next</span>' : '') + '</td>' +
         '</tr>';
     });
   });
   document.querySelector('[data-sched-rows]').innerHTML = html;
   if (next) {
     var n = document.querySelector('[data-sched-next]');
-    n.innerHTML = '<span class="sched-next__label">Next on TV</span><span class="sched-next__info">' + next.day + ', ' + MONTHS[next.p.m - 1] + ' ' + next.p.d + ' · ' + esc(next.a.time) + ' · ' + esc(next.a.network) + '</span><span class="sched-next__title">' + esc(next.a.title) + '</span>';
+    n.innerHTML = '<span class="sched-next__label">Next on TV</span><span class="sched-next__info">' + next.day + ', ' + MONTHS[next.p.m - 1] + ' ' + next.p.d + ' · ' + esc(next.a.time) + ' · ' + esc(next.a.network) + '</span><span class="sched-next__title">' + esc(next.a.title) + (next.a.isNew ? ' <span class="sched-tag sched-tag--new">New</span>' : '') + '</span>';
     n.hidden = false;
   }
 
