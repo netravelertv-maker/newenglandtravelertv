@@ -15,7 +15,21 @@
   var g = {}; now.forEach(function (x) { g[x.type] = x.value; });
   var nowKey = g.year + '-' + g.month + '-' + g.day + ' ' + String(+g.hour * 60 + +g.minute).padStart(4, '0');
 
-  document.querySelector('[data-sched-month]').textContent = S.month;
+  // Testing aid: schedule.html?today=YYYY-MM-DD previews the page as of that date
+  var qt = /[?&]today=(\d{4}-\d{2}-\d{2})/.exec(location.search); if (qt) nowKey = qt[1] + ' 0000';
+  var today = nowKey.slice(0, 10);
+  // Hide airings from days that have already passed (today's stay, dimmed once aired)
+  list = list.filter(function (x) { return x.a.date >= today; });
+  var FULL = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var months = [];
+  list.forEach(function (x) { var k = x.p.y + '-' + x.p.m; if (months.indexOf(k) < 0) months.push(k); });
+  var label = function (k) { var a = k.split('-'); return FULL[+a[1] - 1] + ' ' + a[0]; };
+  var title = !months.length ? (S.month || 'Coming Soon') : months.length === 1 ? label(months[0]) :
+    (months[0].split('-')[0] === months[months.length - 1].split('-')[0]
+      ? FULL[+months[0].split('-')[1] - 1] + ' & ' + label(months[months.length - 1])
+      : label(months[0]) + ' & ' + label(months[months.length - 1]));
+  if (months.length > 2) title = label(months[0]) + ' Onward';
+  document.querySelector('[data-sched-month]').textContent = title;
   ['NESN', 'NESN+'].forEach(function (n) {
     var c = list.filter(function (x) { return x.a.network === n; }).length;
     var el = document.querySelector('[data-count="' + n + '"]'); if (el) el.textContent = c + (c === 1 ? ' airing' : ' airings');
@@ -25,7 +39,10 @@
   list.forEach(function (x) { var last = groups[groups.length - 1]; if (!last || last.date !== x.a.date) groups.push(last = { date: x.a.date, items: [] }); last.items.push(x); });
   var next = null, html = '';
   // Build properly ordered rows (Network first, then day/date group cell)
+  var curMonth = '';
   groups.forEach(function (gr, gi) {
+    var mk = gr.items[0].p.y + '-' + gr.items[0].p.m;
+    if (months.length > 1 && mk !== curMonth) { curMonth = mk; html += '<tr class="sched-month"><td colspan="5">' + label(mk) + '</td></tr>'; }
     gr.items.forEach(function (x, i) {
       var past = x.key < nowKey; if (!past && !next) next = x;
       var net = x.a.network === 'NESN+' ? 'plus' : 'nesn';
@@ -39,6 +56,7 @@
         '</tr>';
     });
   });
+  if (!list.length) html = '<tr class="sched-month"><td colspan="5">New dates coming soon</td></tr>';
   document.querySelector('[data-sched-rows]').innerHTML = html;
   if (next) {
     var n = document.querySelector('[data-sched-next]');
